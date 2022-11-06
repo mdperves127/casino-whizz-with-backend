@@ -93,9 +93,12 @@
                                 class="ti-control-record"></i>Users</a></li>
                 </ul>
             </li>
-            <li class="@yield('dashboard')">
+            <li class="@yield('partners')">
                 <a href="{{ route('partners.index') }}"><i class="ti-bar-chart"></i><span>Partners</span><span
                         class="menu-arrow"></span></a>
+            </li>
+            <li class="@yield('best_casino')">
+                <a href="{{ route('best.index') }}"><i class="ti-bar-chart"></i><span>Best Casinos</span><span class="menu-arrow"></span></a>
             </li>
         </ul>
     </div>

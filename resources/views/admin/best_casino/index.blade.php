@@ -1,5 +1,5 @@
 @extends('layouts.dashboardApp')
-@section('home')
+@section('best_casino')
 mm-active
 @endsection
 @section('dashboard_content')
@@ -7,7 +7,7 @@ mm-active
 <div class="row">
     <div class="col-sm-12">
         <div class="page-title-box">
-            <h4 class="page-title">Partners</h4>
+            <h4 class="page-title">Best Casino</h4>
         </div>
         <!--end page-title-box-->
     </div>
@@ -22,24 +22,28 @@ mm-active
                     <table class="table table-bordered" id="makeEditable">
                         <thead>
                             <tr>
-                                <th>Logo</th>
+                                <th>Title</th>
+                                <th>Percent</th>
+                                <th>Photo</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @forelse ($partners as $partner)
+                            @forelse ($bests as $best)
                             <tr>
+                                <td>{{ $best->title }}</td>
+                                <td>{{ $best->percent }}</td>
                                 <td>
                                     <img style="width: 50px;"
-                                        src="{{ $partner->partner_logo ? asset('assets/images/'.$partner->partner_logo) : asset('assets/images/placeholder.png') }}"
-                                        alt="{{ asset('assets/images/'.$partner->partner_logo) }}">
+                                        src="{{ $best->photo ? asset('assets/images/'.$best->photo) : asset('assets/images/placeholder.png') }}"
+                                        alt="{{ asset('assets/images/'.$best->photo) }}">
                                 </td>
                                 <td name="buttons">
                                     <div class="pull-right">
-                                        <a href="{{ route('partners.edit', $partner->id) }}"
+                                        <a href="{{ route('best.edit', $best->id) }}"
                                             class="btn btn-sm btn-soft-success btn-circle mr-2"><i
                                                 class="fa fa-edit"></i></a>
-                                        <form action="{{ route('partners.destroy', $partner->id) }}"
+                                        <form action="{{ route('best.destroy', $best->id) }}"
                                             style="display: inline-block;" method="POST">
                                             @csrf
                                             @method('DELETE')
@@ -67,12 +71,25 @@ mm-active
     <div class="col-4">
         <div class="card">
             <div class="card-body">
-                <h4 class="mt-0 header-title">Add Partner</h4>
-                <form action="{{ route('partners.store') }}" method="POST" enctype="multipart/form-data">
+                <h4 class="mt-0 header-title">Add Best Casino</h4>
+                <form action="{{ route('best.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="partner_logo">Logo</label>
-                        <input type="file" class="form-control" name="partner_logo" />
+                        <label for="Title">Title</label>
+                        <input type="text" class="form-control" name="title" placeholder="Enter Casino Title" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Percent">Percent</label>
+                        <input type="text" class="form-control" name="percent"
+                            placeholder="Enter Percent (%) Number Only" />
+                    </div>
+                    <div class="form-group">
+                        <label for="link">Button Link</label>
+                        <input type="text" class="form-control" name="button_link" placeholder="Enter Button Link" />
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Photo</label>
+                        <input type="file" class="form-control" name="photo" />
                     </div>
                     <button type="submit" class="btn btn-gradient-primary">Submit</button>
                 </form>

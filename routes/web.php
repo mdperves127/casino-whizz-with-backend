@@ -26,3 +26,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Partner Controller Start
 Route::resource('/dashboard/partners', App\Http\Controllers\PartnerController::class);
 // Partner Controller Ends
+
+// BestCasino Controller Start
+Route::resource('/dashboard/casino/best', App\Http\Controllers\BestCasinoController::class);
+// BestCasino Controller Ends

@@ -14,6 +14,7 @@ mm-active
     <!--end col-->
 </div><!-- end page title end breadcrumb -->
 <div class="row">
+    @include('alerts.alert')
     <div class="col-4 m-auto">
         <div class="card">
             <div class="card-body">
