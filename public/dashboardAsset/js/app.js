@@ -1,5 +1,3 @@
-
-
 /**
  * Theme: Crovex - Responsive Bootstrap 4 Admin Dashboard
  * Author: Mannatthemes
@@ -7,7 +5,7 @@
  */
 
 // In your Javascript (external .js resource or <script> tag)
-$(document).ready(function() {
+$(document).ready(function () {
     $('.js-example-basic-multiple').select2();
 });
 
@@ -28,11 +26,11 @@ $(document).ready(function() {
         });
     }
 
-   
+
     function initMetisMenu() {
         //metis menu
         $(".metismenu").metisMenu();
-        $( window ).resize(function() {
+        $(window).resize(function () {
             initEnlarge();
         });
     }
@@ -51,16 +49,16 @@ $(document).ready(function() {
             $('body').addClass('enlarge-menu enlarge-menu-all');
         } else {
             // if ($('body').data('keep-enlarged') != true)
-                $('body').removeClass('enlarge-menu enlarge-menu-all');
+            $('body').removeClass('enlarge-menu enlarge-menu-all');
         }
     }
 
-    function initTooltipPlugin(){
-        $.fn.tooltip && $('[data-toggle="tooltip"]').tooltip()        
+    function initTooltipPlugin() {
+        $.fn.tooltip && $('[data-toggle="tooltip"]').tooltip()
     }
 
     function initMainIconTabMenu() {
-        $('.main-icon-menu .nav-link').on('click', function(e){
+        $('.main-icon-menu .nav-link').on('click', function (e) {
             $("body").removeClass("enlarge-menu");
             e.preventDefault();
             $(this).addClass('active');
@@ -77,8 +75,8 @@ $(document).ready(function() {
         // === following js will activate the menu in left side bar based on url ====
         $(".leftbar-tab-menu a, .left-sidenav a").each(function () {
             var pageUrl = window.location.href.split(/[?#]/)[0];
-            if (this.href == pageUrl) { 
-                $(this).addClass("active");                
+            if (this.href == pageUrl) {
+                $(this).addClass("active");
                 $(this).parent().addClass("active"); // add active to li of the current link                 
                 $(this).parent().parent().addClass("in");
                 $(this).parent().parent().addClass("mm-show");
@@ -87,9 +85,9 @@ $(document).ready(function() {
                 $(this).parent().parent().parent().addClass("active");
                 $(this).parent().parent().parent().parent().addClass("mm-show"); // add active to li of the current link                
                 $(this).parent().parent().parent().parent().parent().addClass("mm-active");
-                var menu =  $(this).closest('.main-icon-menu-pane').attr('id');
-                $("a[href='#"+menu+"']").addClass('active');
-                
+                var menu = $(this).closest('.main-icon-menu-pane').attr('id');
+                $("a[href='#" + menu + "']").addClass('active');
+
             }
         });
     }
@@ -100,25 +98,26 @@ $(document).ready(function() {
     // Auto complate
 
     function initAutoComplate() {
-        $(document).ready(function() {
+        $(document).ready(function () {
             BindControls();
         });
-    
+
         function BindControls() {
-            var Countries = ['Forms', 
-                'Tables', 
-                'Charts', 
+            var Countries = ['Forms',
+                'Tables',
+                'Charts',
                 'Icones',
-                'Maps'];
-    
+                'Maps'
+            ];
+
             $('#AllCompo').autocomplete({
                 source: Countries,
                 minLength: 0,
                 scroll: true
-            }).focus(function() {
+            }).focus(function () {
                 $(this).autocomplete("search", "");
             });
-        } 
+        }
     }
 
 
@@ -166,7 +165,7 @@ $(document).ready(function() {
 
     init();
     // Appending Specification To Items
-    $('.add-speciality').on('click',function(){
+    $('.add-speciality').on('click', function () {
         var text = $(this).data('text');
         var text1 = $(this).data('text1');
         $('#speciality-section').append(`
@@ -198,33 +197,25 @@ $(document).ready(function() {
 
     });
 
-    
-    $(document).on('click','.remove-speciality',function(){
+
+    $(document).on('click', '.remove-speciality', function () {
         $(this).parent().parent().remove();
     });
     // Appending Features To Items
-    $('.add-features').on('click',function(){
+    $('.add-hot_list').on('click', function () {
         var text = $(this).data('text');
-        var text1 = $(this).data('text1');
-        $('#features-section').append(`
+        $('#hot_list').append(`
         <div class="d-flex">
         <div class="flex-grow-1">
         <div class="form-group">
             <input type="text" class="form-control"
-                name="features_name[]"
+                name="hot_list[]"
                 placeholder="${text}" value="">
-            </div>
-    </div>
-    <div class="flex-grow-1">
-        <div class="form-group">
-            <input type="text" class="form-control"
-                name="features_price[]"
-                placeholder="${text1}" value="">
             </div>
     </div>
     <div class="flex-btn">
                 <button type="button"
-                    class="btn btn-danger remove-features">
+                    class="btn btn-danger remove-hot_list">
                     <i class="fa fa-minus"></i>
                 </button>
             </div>
@@ -235,15 +226,15 @@ $(document).ready(function() {
 
     });
 
-    
-    $(document).on('click','.remove-features',function(){
+
+    $(document).on('click', '.remove-hot_list', function () {
         $(this).parent().parent().remove();
     });
 
 
-    
+
     // Appending Features To Items
-    $('.add-feature').on('click',function(){
+    $('.add-feature').on('click', function () {
         var text = $(this).data('text');
         var text1 = $(this).data('text1');
         $('#feature-section').append(`
@@ -275,8 +266,8 @@ $(document).ready(function() {
 
     });
 
-    
-    $(document).on('click','.remove-feature',function(){
+
+    $(document).on('click', '.remove-feature', function () {
         $(this).parent().parent().remove();
     });
 
@@ -286,5 +277,3 @@ $(document).ready(function() {
 
 
 })(jQuery)
-
-

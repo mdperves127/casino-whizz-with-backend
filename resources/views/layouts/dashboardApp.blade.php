@@ -100,6 +100,9 @@
             <li class="@yield('best_casino')">
                 <a href="{{ route('best.index') }}"><i class="ti-bar-chart"></i><span>Best Casinos</span><span class="menu-arrow"></span></a>
             </li>
+            <li class="@yield('online_casino')">
+                <a href="{{ route('online.index') }}"><i class="ti-bar-chart"></i><span>Online Casinos</span><span class="menu-arrow"></span></a>
+            </li>
         </ul>
     </div>
     <!-- end left-sidenav-->

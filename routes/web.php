@@ -30,3 +30,7 @@ Route::resource('/dashboard/partners', App\Http\Controllers\PartnerController::c
 // BestCasino Controller Start
 Route::resource('/dashboard/casino/best', App\Http\Controllers\BestCasinoController::class);
 // BestCasino Controller Ends
+
+// OnlineCasino Controller Start
+Route::resource('/dashboard/casino/online', App\Http\Controllers\OnlineCasinoController::class);
+// OnlineCasino Controller Ends
