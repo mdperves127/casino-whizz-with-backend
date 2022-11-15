@@ -103,6 +103,25 @@
             <li class="@yield('online_casino')">
                 <a href="{{ route('online.index') }}"><i class="ti-bar-chart"></i><span>Online Casinos</span><span class="menu-arrow"></span></a>
             </li>
+            <li class="@yield('social')">
+                <a href="{{ route('social.index') }}"><i class="ti-bar-chart"></i><span>Social</span><span class="menu-arrow"></span></a>
+            </li>
+            <li class="@yield('populer')">
+                <a href="{{ route('populer.index') }}"><i class="ti-bar-chart"></i><span>Most Populer</span><span class="menu-arrow"></span></a>
+            </li>
+            <li class="@yield('location')">
+                <a href="{{ route('location.index') }}"><i class="ti-bar-chart"></i><span>Location Populer</span><span class="menu-arrow"></span></a>
+            </li>
+            <li class="@yield('other_games')">
+                <a href="javascript: void(0);"><i class="ti-bar-chart"></i><span>Other Games</span><span
+                        class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                <ul class="nav-second-level" aria-expanded="false">
+                    <li class="nav-item"><a class="nav-link" href="{{ route('other.index') }}"><i
+                                class="ti-control-record"></i>Category</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('game.index') }}"><i
+                                class="ti-control-record"></i>Games</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
     <!-- end left-sidenav-->
