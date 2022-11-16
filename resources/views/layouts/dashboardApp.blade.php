@@ -86,12 +86,8 @@
     <div class="left-sidenav">
         <ul class="metismenu left-sidenav-menu">
             <li class="@yield('dashboard')">
-                <a href="javascript: void(0);"><i class="ti-bar-chart"></i><span>Dashboard</span><span
-                        class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
-                <ul class="nav-second-level" aria-expanded="false">
-                    <li class="nav-item"><a class="nav-link" href="#"><i
-                                class="ti-control-record"></i>Users</a></li>
-                </ul>
+                <a href="{{ route('admin.dashboard') }}"><i class="ti-bar-chart"></i><span>Dashboard</span><span
+                        class="menu-arrow"></span></a>
             </li>
             <li class="@yield('partners')">
                 <a href="{{ route('partners.index') }}"><i class="ti-bar-chart"></i><span>Partners</span><span
@@ -121,6 +117,9 @@
                     <li class="nav-item"><a class="nav-link" href="{{ route('game.index') }}"><i
                                 class="ti-control-record"></i>Games</a></li>
                 </ul>
+            </li>
+            <li class="@yield('setting')">
+                <a href="{{ route('admin.setting') }}"><i class="ti-bar-chart"></i><span>Site Settings</span><span class="menu-arrow"></span></a>
             </li>
         </ul>
     </div>

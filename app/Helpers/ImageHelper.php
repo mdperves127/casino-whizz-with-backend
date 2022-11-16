@@ -46,10 +46,10 @@ class ImageHelper
     {
         $name = time() . $file->getClientOriginalName();
 
-        $file->move(base_path('..') . $path, $name);
+        $file->move(base_path('public/') . $path, $name);
         if ($data[$field] != null) {
-            if (file_exists(base_path('../') . $delete_path . $data[$field])) {
-                unlink(base_path('../') . $delete_path . $data[$field]);
+            if (file_exists(base_path('public/') . $delete_path . $data[$field])) {
+                unlink(base_path('/public') . $delete_path . $data[$field]);
             }
         }
         return $name;

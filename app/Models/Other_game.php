@@ -10,9 +10,8 @@ class Other_game extends Model
     use HasFactory;
     protected $fillable = ['category_id','name', 'category', 'rate', 'link', 'photo'];
 
-
-    public function other_category()
+    public function category()
     {
-        return $this->hasMany('App\Model\Other_games_category', 'id', 'category_id');
+    	return $this->hasMany(Other_games_category::class, 'id', 'category_id');
     }
 }

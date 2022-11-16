@@ -22,7 +22,6 @@ mm-active
                     <table class="table table-bordered" id="makeEditable">
                         <thead>
                             <tr>
-                                <th>Category Name</th>
                                 <th>Name</th>
                                 <th>Photo</th>
                                 <th>Action</th>
@@ -31,7 +30,6 @@ mm-active
                         <tbody>
                             @forelse ($datas as $data)
                             <tr>
-                                <td>{{ $data->name }}</td>
                                 <td>{{ $data->name }}</td>
                                 <td>
                                     <img style="width: 50px;" src="{{ asset('assets/images') }}/{{ $data->photo }}"

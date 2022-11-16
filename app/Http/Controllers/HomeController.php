@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Setting;
 use App\Models\User;
+use App\Repositories\SettingRepository;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -12,9 +14,11 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(SettingRepository $repository)
     {
         $this->middleware('auth');
+        
+        $this->repository = $repository;
     }
 
     /**
@@ -24,8 +28,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('admin.dashboard.index', [
-            'users' => User::all(),
+        return view('admin.dashboard.index');
+    }
+    public function setting() {
+        return view('admin.setting.index', [
+            'setting' => Setting::find(1),
         ]);
+    }
+    public function settingupdate(Request $request)
+    {
+        $this->repository->update($request);
+        return back()->withSuccess(__('Data Updated Successfully.'));
     }
 }

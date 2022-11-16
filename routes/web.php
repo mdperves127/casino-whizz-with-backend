@@ -14,13 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\FrontendController::class, 'index'])->name('index');
+
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.dashboard');
+
+Route::get('/admin/setting', [App\Http\Controllers\HomeController::class, 'setting'])->name('admin.setting');
+Route::post('/admin/setting', [App\Http\Controllers\HomeController::class, 'settingupdate'])->name('admin.setting.update');
 
 
 // Partner Controller Start

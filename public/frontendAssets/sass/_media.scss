@@ -1,0 +1,621 @@
+/*======== large device =========*/
+@media (min-width: 992px) and (max-width: 1366px) {
+    #banner .img-part img {
+        width: 100%;
+    }
+
+    #banner h1 {
+        color: #fff;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 95px;
+        padding-top: 90px;
+    }
+
+    #banner {
+        height: 500px !important;
+    }
+
+    .btn-bg {
+        font-size: 18px;
+        padding: 10px 28px !important;
+    }
+
+    .btn-tr {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 10px 40px;
+        border-radius: 12px;
+        border: 1px solid #FF6600;
+    }
+
+    #banner .img-part {
+        padding-top: 90px;
+    }
+
+    #other_games .game_card .details h5 {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 54px;
+        margin-bottom: 0;
+    }
+
+    #casino_location .location .exclusive_bonus .claim_card {
+        width: 160px;
+    }
+
+    #casino_location .location .exclusive_bonus .claim_card .detail a {
+        padding: 5px;
+        color: #fff;
+        font-size: 10px;
+        background: #008543;
+        border-radius: 10px;
+        border: 1px solid #008543;
+        transition: all linear .3s;
+    }
+
+    #casino_location .location .exclusive_bonus .claim_card .detail span {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    #casino_location .location .locations h1 {
+        color: #fff;
+        font-size: 36px;
+        padding-top: 60px;
+    }
+}
+
+/*======== medium device =========*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    #banner p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 27px;
+        padding-right: 10px;
+        margin-bottom: 60px;
+    }
+
+    #banner {
+        height: auto;
+    }
+
+    #banner .img-part {
+        text-align: center;
+    }
+
+    #best_casino .casino_option ul li {
+        display: inline-block;
+        padding-right: 50px;
+    }
+
+    #best_casino .casino_option {
+        height: 170px;
+        line-height: 80px;
+    }
+
+    #best_casino .casino .detail a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 8px 10px;
+        background: transparent;
+        border-radius: 12px;
+        border: 1px solid #FF6600;
+        margin-left: 20px !important;
+        transition: all linear .3s;
+    }
+
+    #trusted_casino .best_casino .casino_card {
+        width: 100%;
+        background: #FF6600;
+        border-radius: 12px;
+    }
+
+    .btn-bg {
+        font-size: 22px;
+        padding: 10px 28px !important;
+    }
+
+    #trusted_casino .best_casino .casino_card {
+        margin-top: 25px;
+    }
+
+    #trusted_casino .best_casino .casino_play {
+        text-align: center;
+        padding-top: 50%;
+    }
+
+    #casino_location .location .exclusive_bonus .bonus_heading {
+        color: #fff;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 52px;
+        text-align: center;
+        padding-left: 20px;
+        padding-top: 21px;
+    }
+
+    .down-part {
+        text-align: center;
+    }
+
+    #casino_location .location .locations h1 {
+        color: #fff;
+        font-size: 40px;
+        padding-top: 60px;
+    }
+}
+
+/*======== small device =========*/
+@media (min-width: 576px) and (max-width: 768.98px) {
+
+    #loginBlock {
+        display: none;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    body #banner h1 {
+        font-size: 46px;
+        margin-top: 65px;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    body #banner p {
+        padding-right: 0px;
+        margin-bottom: 60px;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    body .btn-bg {
+        font-size: 20px;
+        padding: 10px 29px;
+    }
+
+    body .btn-tr {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 10px 40px;
+        border-radius: 12px;
+        border: 1px solid #FF6600;
+        display: block;
+        margin-top: 32px;
+
+        i {
+            font-size: 16px;
+            margin-left: 10px;
+        }
+    }
+
+    .banner-btn {
+        text-align: center;
+    }
+
+
+    #banner {
+        height: auto;
+    }
+
+    #banner .img-part img {
+        width: 100%;
+    }
+
+    #best_casino .casino_option ul li {
+        padding-right: 15px;
+    }
+
+    #best_casino .casino_option ul li a {
+        font-size: 20px;
+    }
+
+    #best_casino .casino_option {
+        height: 230px;
+        line-height: 60px;
+        padding: 20px 0px;
+    }
+
+    #best_casino .casino_option .arrows {
+        text-align: center;
+    }
+
+    #best_casino .casino {
+        margin: 0px 20px;
+    }
+
+    #best_casino h2 {
+        padding-top: 33px;
+    }
+
+    #partners .partner {
+        margin: 20px;
+    }
+
+    #trusted_casino .best_casino .casino_bonus {
+        padding-left: 0px;
+        padding-top: 18%;
+        padding-bottom: 10px;
+    }
+
+    #trusted_casino .best_casino {
+        padding: 45px;
+    }
+
+    #trusted_casino .best_casino .casino_play {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    #casino_location .location .exclusive_bonus .claim_card {
+        width: auto;
+        background: #FF6600;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    #other_games .game_card .details {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: #008543;
+        padding: 16px 22px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+        height: 50%;
+    }
+
+    #other_games .game_card .details h5 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 54px;
+        margin-bottom: 0;
+    }
+
+    #other_games .game_card .details p {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 5px;
+    }
+
+    #other_games .game_card .details span {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #other_games .game_card .details .btn-bg {
+        font-size: 16px;
+        padding: 10px 26px;
+    }
+
+    #other_games .game_card .details .play_now {
+        margin-top: 30%;
+    }
+
+    #other_games {
+        padding: 80px 0 50px;
+    }
+
+    .exclusive_bonus {
+        text-align: center;
+    }
+
+    #casino_location .location .exclusive_bonus .promo_code {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    #casino_location .location .exclusive_bonus .bonus_heading {
+        padding-top: 30px;
+    }
+
+    #casino_location .location .locations h1 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 70px;
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    #latest_posts .blogs .btn-bg.read_more {
+        padding: 10px 66px;
+        font-size: 20px;
+        margin-left: 0;
+        transition: all linear .3s;
+    }
+
+    #latest_posts .blog_category h1 {
+        color: #fff;
+        font-size: 48px;
+        border-bottom: 1px solid #999;
+        padding-bottom: 20px;
+        padding-top: 35px;
+    }
+
+    #latest_posts .pay-now {
+        height: 500px;
+    }
+
+    footer .footer_company img {
+        padding-bottom: 35px;
+    }
+
+    .footer_company {
+        text-align: center;
+    }
+
+    .last-part {
+        text-align: center;
+    }
+
+    footer .copy_right {
+        padding-top: 31px;
+    }
+
+    #best_casino .casino .detail a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    #trusted_casino .best_casino .casino_bonus {
+        text-align: center;
+    }
+
+    #trusted_casino .best_casino .casino_bonus .promo_code {
+        text-align: center;
+    }
+
+    #trusted_casino .best_casino .casino_updates {
+        width: 100%;
+        text-align: center;
+    }
+
+    #latest_posts .pay-now .text-content .ads_card p {
+        padding-top: 33px;
+    }
+
+    #latest_posts .pay-now .text-content .ads_card {
+        background: #008543;
+        border-radius: 12px;
+        height: 230px;
+    }
+
+    #trusted_casino .best_casino .casino_card {
+        width: 75%;
+        background: #FF6600;
+        border-radius: 12px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/*======== Extra small device =========*/
+@media (max-width: 575.98px) {
+    #loginBlock {
+        display: none;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    body #banner h1 {
+        font-size: 46px;
+        margin-top: 65px;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    body #banner p {
+        padding-right: 0px;
+        margin-bottom: 60px;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    body .btn-bg {
+        font-size: 20px;
+        padding: 10px 29px;
+    }
+
+    body .btn-tr {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 10px 40px;
+        border-radius: 12px;
+        border: 1px solid #FF6600;
+        display: block;
+        margin-top: 32px;
+
+        i {
+            font-size: 16px;
+            margin-left: 10px;
+        }
+    }
+
+    .banner-btn {
+        text-align: center;
+    }
+
+    #banner {
+        height: auto;
+    }
+
+    #banner .img-part img {
+        width: 100%;
+    }
+
+    #best_casino .casino_option ul li {
+        padding-right: 15px;
+    }
+
+    #best_casino .casino_option ul li a {
+        font-size: 20px;
+    }
+
+    #best_casino .casino_option {
+        height: 230px;
+        line-height: 60px;
+        padding: 20px 0px;
+    }
+
+    #best_casino .casino_option .arrows {
+        text-align: center;
+    }
+
+    #best_casino .casino {
+        margin: 0px 20px;
+    }
+
+    #best_casino h2 {
+        padding-top: 33px;
+    }
+
+    #partners .partner {
+        margin: 20px;
+    }
+
+    #trusted_casino .best_casino .casino_bonus {
+        padding-left: 0px;
+        padding-top: 18%;
+        padding-bottom: 10px;
+    }
+
+    #trusted_casino .best_casino {
+        padding: 45px;
+    }
+
+    #trusted_casino .best_casino .casino_play {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    #other_games .game_card {
+        height: 250px;
+    }
+
+    #other_games .game_card .details {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: #008543;
+        padding: 16px 22px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+        height: 50%;
+    }
+
+    #other_games .game_card .details h5 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 54px;
+        margin-bottom: 0;
+    }
+
+    #other_games .game_card .details p {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 5px;
+    }
+
+    #other_games .game_card .details span {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #other_games .game_card .details .btn-bg {
+        font-size: 16px;
+        padding: 10px 26px;
+    }
+
+    #other_games .game_card .details .play_now {
+        margin-top: 30%;
+    }
+
+    #other_games {
+        padding: 80px 0 50px;
+    }
+
+    .exclusive_bonus {
+        text-align: center;
+    }
+
+    #casino_location .location .exclusive_bonus .promo_code {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    #casino_location .location .exclusive_bonus .bonus_heading {
+        padding-top: 30px;
+    }
+
+    #casino_location .location .locations h1 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 70px;
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    #latest_posts .blogs .btn-bg.read_more {
+        padding: 10px 66px;
+        font-size: 20px;
+        margin-left: 0;
+        transition: all linear .3s;
+    }
+
+    #latest_posts .blog_category h1 {
+        color: #fff;
+        font-size: 48px;
+        border-bottom: 1px solid #999;
+        padding-bottom: 20px;
+        padding-top: 35px;
+    }
+
+    #latest_posts .pay-now {
+        height: 500px;
+    }
+
+    footer .footer_company img {
+        padding-bottom: 35px;
+    }
+
+    .footer_company {
+        text-align: center;
+    }
+
+    .last-part {
+        text-align: center;
+    }
+
+    footer .copy_right {
+        padding-top: 31px;
+    }
+
+    #trusted_casino .best_casino .casino_card {
+        width: 75%;
+        background: #FF6600;
+        border-radius: 12px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

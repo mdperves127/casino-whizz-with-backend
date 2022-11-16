@@ -37,7 +37,7 @@ return new class extends Migration
             $table->string('trusted_casino_title');
             $table->string('related_game_heading');
             $table->string('related_game_bg');
-            $table->string('related_game_bottom_text');
+            $table->longText('related_game_bottom_text');
             $table->string('related_game_bottom_color_text');
             $table->string('casino_location_heading');
             $table->string('exclusive_title');
@@ -48,7 +48,7 @@ return new class extends Migration
             $table->string('exclusive_bonus_to');
             $table->string('exclusive_heading');
             $table->string('exclusive_promo_code');
-            $table->string('footer_text');
+            $table->longText('footer_text');
             $table->timestamps();
         });
     }

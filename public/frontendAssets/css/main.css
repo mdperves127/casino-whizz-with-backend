@@ -1,0 +1,630 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+* {
+  scrollbar-width: thin; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+html,
+body {
+  scroll-behavior: smooth; }
+
+/* Change text & background color */
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit; }
+
+button,
+button:hover,
+button:focus,
+button:active {
+  outline: none; }
+
+img {
+  vertical-align: middle; }
+
+ul,
+ol {
+  list-style: none; }
+
+body {
+  font-family: 'Oswald', sans-serif; }
+  body .btn-bg {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px 40px;
+    background: #FF6600;
+    border-radius: 12px;
+    border: 1px solid #FF6600; }
+  body .btn-tr {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px 40px;
+    border-radius: 12px;
+    border: 1px solid #FF6600; }
+  body header .navbar .navbar-nav .nav-link {
+    color: #fff; }
+  body header .navbar #inputSearch {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    vertical-align: bottom;
+    height: 42%;
+    position: absolute;
+    right: 30px;
+    margin: auto;
+    z-index: -1;
+    visibility: hidden;
+    transition: .1s; }
+  body #banner {
+    height: 675px; }
+    body #banner h1 {
+      color: #fff;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 95px;
+      margin-top: 200px; }
+    body #banner p {
+      color: #fff;
+      font-size: 18px;
+      line-height: 27px;
+      padding-right: 700px;
+      margin-bottom: 60px; }
+    body #banner .btn-bg {
+      margin-right: 20px;
+      transition: all linear .3s; }
+      body #banner .btn-bg:hover {
+        background: transparent;
+        border: 1px solid #FF6600;
+        transition: all linear .3s; }
+    body #banner .btn-tr {
+      transition: all linear .3s; }
+      body #banner .btn-tr:hover {
+        background: #FF6600;
+        transition: all linear .3s; }
+  body #casino_option {
+    height: 80px;
+    line-height: 80px; }
+    body #casino_option ul {
+      padding-left: 0; }
+      body #casino_option ul li {
+        display: inline-block;
+        padding-right: 70px; }
+        body #casino_option ul li a {
+          color: #fff;
+          font-size: 22px;
+          transition: all linear .3s; }
+          body #casino_option ul li a:hover {
+            color: #222;
+            transition: all linear .3s; }
+  body #best_casino {
+    padding-bottom: 40px; }
+    body #best_casino h2 {
+      color: #fff;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 54px;
+      padding-top: 80px;
+      padding-bottom: 40px; }
+    body #best_casino .casino {
+      width: 19%;
+      display: inline-block;
+      margin-right: 10px;
+      background: #008543;
+      border-radius: 12px; }
+      body #best_casino .casino .img img {
+        width: 100%; }
+      body #best_casino .casino .detail {
+        padding: 14px 10px; }
+        body #best_casino .casino .detail h4 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 0; }
+        body #best_casino .casino .detail span {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 400; }
+        body #best_casino .casino .detail a {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 400;
+          padding: 8px 10px;
+          background: #FF6600;
+          border-radius: 12px;
+          border: 1px solid #FF6600;
+          margin-left: 20px !important;
+          transition: all linear .3s; }
+          body #best_casino .casino .detail a:hover {
+            background: transparent;
+            transition: all linear .3s; }
+  body #partners {
+    height: 120px; }
+    body #partners .partner {
+      display: inline-block;
+      width: 12%;
+      margin-right: 50px;
+      margin-top: 1.2%; }
+      body #partners .partner img {
+        width: 100%; }
+  body #trusted_casino {
+    padding-top: 80px; }
+    body #trusted_casino h1 {
+      color: #fff;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 53px;
+      text-align: center; }
+    body #trusted_casino p {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 40px;
+      text-align: center; }
+      body #trusted_casino p span {
+        color: #FF6600; }
+    body #trusted_casino .best_casino {
+      padding: 60px;
+      border: 1px solid #FF6600;
+      border-radius: 24px;
+      position: relative;
+      margin-top: 40px; }
+      body #trusted_casino .best_casino .tag {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: -1px;
+        height: 36px;
+        width: 62px;
+        background: #FF6600;
+        border-radius: 10px 24px 0px 10px;
+        text-align: center;
+        color: #fff;
+        line-height: 36px; }
+      body #trusted_casino .best_casino .casino_card {
+        width: 100%;
+        background: #FF6600;
+        border-radius: 12px; }
+        body #trusted_casino .best_casino .casino_card .img img {
+          width: 100%; }
+        body #trusted_casino .best_casino .casino_card .details {
+          padding: 10px; }
+          body #trusted_casino .best_casino .casino_card .details h4 {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 0; }
+          body #trusted_casino .best_casino .casino_card .details span {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 23px; }
+          body #trusted_casino .best_casino .casino_card .details a {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px; }
+      body #trusted_casino .best_casino .casino_bonus {
+        padding-left: 25px;
+        padding-top: 30%; }
+        body #trusted_casino .best_casino .casino_bonus .welcome {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26px; }
+        body #trusted_casino .best_casino .casino_bonus .welcome_bonus {
+          color: #FF6600;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26px; }
+        body #trusted_casino .best_casino .casino_bonus .promo_code {
+          text-align: left; }
+      body #trusted_casino .best_casino .casino_updates {
+        width: 100%; }
+        body #trusted_casino .best_casino .casino_updates h6 {
+          color: #fff;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 36px; }
+          body #trusted_casino .best_casino .casino_updates h6 span {
+            color: #FF6600; }
+        body #trusted_casino .best_casino .casino_updates ul {
+          padding-left: 0; }
+          body #trusted_casino .best_casino .casino_updates ul li {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 40px; }
+      body #trusted_casino .best_casino .casino_play {
+        text-align: center;
+        padding-top: 30%; }
+        body #trusted_casino .best_casino .casino_play a {
+          padding: 10px 80px; }
+        body #trusted_casino .best_casino .casino_play .flug {
+          margin-top: 20px; }
+          body #trusted_casino .best_casino .casino_play .flug img {
+            display: inline-block; }
+          body #trusted_casino .best_casino .casino_play .flug span {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px; }
+  body #other_games {
+    padding: 80px 0; }
+    body #other_games h1 {
+      color: #fff;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 68px;
+      margin-bottom: 0;
+      text-align: center; }
+    body #other_games .buttons button {
+      display: inline-block;
+      margin-top: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 34px;
+      transition: all linear .3s;
+      background: transparent;
+      border: none; }
+      body #other_games .buttons button:hover {
+        background: #FF6600;
+        border-radius: 5px;
+        transition: all linear .3s; }
+    body #other_games .buttons .mixitup-control-active {
+      background: #FF6600;
+      border-radius: 5px;
+      transition: all linear .3s; }
+    body #other_games ul {
+      text-align: center;
+      padding-left: 0; }
+      body #other_games ul .active {
+        background: #FF6600;
+        border-radius: 5px; }
+      body #other_games ul li {
+        display: inline-block;
+        margin-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+        transition: all linear .3s; }
+        body #other_games ul li:hover {
+          background: #FF6600;
+          border-radius: 5px;
+          transition: all linear .3s; }
+    body #other_games .game_card {
+      position: relative; }
+      body #other_games .game_card img {
+        width: 100%;
+        border-radius: 24px; }
+      body #other_games .game_card .details {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: #008543;
+        padding: 16px 22px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px; }
+        body #other_games .game_card .details h5 {
+          color: #fff;
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 54px;
+          margin-bottom: 0; }
+        body #other_games .game_card .details p {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 26px; }
+        body #other_games .game_card .details span {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 400; }
+        body #other_games .game_card .details .play_now {
+          margin-top: 15%; }
+          body #other_games .game_card .details .play_now a {
+            transition: all linear .3s; }
+            body #other_games .game_card .details .play_now a:hover {
+              background: transparent;
+              transition: all linear .3s; }
+    body #other_games .browse_all {
+      transition: all linear .3s; }
+      body #other_games .browse_all:hover {
+        background: transparent;
+        transition: all linear .3s; }
+    body #other_games .paragraph {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 40px;
+      margin-top: 70px;
+      margin-bottom: 50px; }
+      body #other_games .paragraph span {
+        color: #FF6600; }
+  body #casino_location .location .exclusive_bonus {
+    padding: 60px;
+    border-radius: 24px; }
+    body #casino_location .location .exclusive_bonus .double {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: center; }
+    body #casino_location .location .exclusive_bonus .claim_card {
+      width: 250px;
+      background: #FF6600;
+      border-radius: 12px; }
+      body #casino_location .location .exclusive_bonus .claim_card img {
+        width: 100%; }
+      body #casino_location .location .exclusive_bonus .claim_card .detail {
+        padding: 10px; }
+        body #casino_location .location .exclusive_bonus .claim_card .detail p {
+          color: #008543;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 26px;
+          margin-bottom: 0; }
+        body #casino_location .location .exclusive_bonus .claim_card .detail span {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 24px; }
+        body #casino_location .location .exclusive_bonus .claim_card .detail a {
+          padding: 5px;
+          color: #fff;
+          font-size: 18px;
+          background: #008543;
+          border-radius: 10px;
+          border: 1px solid #008543;
+          transition: all linear .3s; }
+          body #casino_location .location .exclusive_bonus .claim_card .detail a:hover {
+            background: transparent;
+            transition: all linear .3s; }
+    body #casino_location .location .exclusive_bonus .bonus_heading {
+      color: #fff;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 52px;
+      text-align: center;
+      padding-left: 20px;
+      padding-top: 70px; }
+      body #casino_location .location .exclusive_bonus .bonus_heading span {
+        color: #FF6600; }
+    body #casino_location .location .exclusive_bonus .promo_code {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px;
+      padding-top: 70px;
+      padding-bottom: 10px; }
+  body #casino_location .location .locations h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 70px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px; }
+  body #casino_location .location .locations ul {
+    padding-left: 0; }
+    body #casino_location .location .locations ul li {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 35px;
+      border-bottom: 1px solid #999;
+      transition: all linear .3s; }
+      body #casino_location .location .locations ul li:hover {
+        color: #FF6600;
+        border-bottom: 1px solid #FF6600;
+        transition: all linear .3s; }
+  body #latest_posts {
+    padding: 80px 0; }
+    body #latest_posts .blogs h1 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 50px; }
+    body #latest_posts .blogs .btn-bg.read_more {
+      padding: 10px 80px;
+      font-size: 22px;
+      margin-left: 35%;
+      transition: all linear .3s; }
+      body #latest_posts .blogs .btn-bg.read_more:hover {
+        background: transparent;
+        transition: all linear .3s; }
+    body #latest_posts .blogs .blog {
+      margin-bottom: 40px; }
+      body #latest_posts .blogs .blog img {
+        width: 100%;
+        border-radius: 24px; }
+      body #latest_posts .blogs .blog .title {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 47px;
+        transition: all linear .3s; }
+        body #latest_posts .blogs .blog .title:hover {
+          color: #FF6600;
+          transition: all linear .3s; }
+      body #latest_posts .blogs .blog span {
+        color: #999;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px; }
+      body #latest_posts .blogs .blog p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px; }
+      body #latest_posts .blogs .blog .read_more {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; }
+        body #latest_posts .blogs .blog .read_more i {
+          color: #FF6600; }
+    body #latest_posts .blog_category h1 {
+      color: #fff;
+      font-size: 48px;
+      border-bottom: 1px solid #999;
+      padding-bottom: 20px; }
+    body #latest_posts .blog_category ul {
+      padding-left: 0; }
+      body #latest_posts .blog_category ul li {
+        border-bottom: 1px solid #999;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        transition: all linear .3s; }
+        body #latest_posts .blog_category ul li:hover {
+          border-bottom: 1px solid #FF6600;
+          transition: all linear .3s; }
+        body #latest_posts .blog_category ul li a {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          transition: all linear .3s; }
+          body #latest_posts .blog_category ul li a:hover {
+            color: #FF6600;
+            transition: all linear .3s; }
+    body #latest_posts .pay-now {
+      margin-top: 80px;
+      background-image: url(../images/pay-out-bg.png);
+      background-position: center center;
+      background-size: cover;
+      border-radius: 24px;
+      height: 460px;
+      position: relative;
+      padding: 30px 50px; }
+      body #latest_posts .pay-now .text-content {
+        z-index: 9;
+        text-align: center; }
+        body #latest_posts .pay-now .text-content .ads_card {
+          background: #008543;
+          border-radius: 12px;
+          height: 200px; }
+          body #latest_posts .pay-now .text-content .ads_card .img-box {
+            height: 130px; }
+            body #latest_posts .pay-now .text-content .ads_card .img-box img {
+              width: 100%; }
+          body #latest_posts .pay-now .text-content .ads_card p {
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 70px;
+            color: #FFFFFF; }
+            body #latest_posts .pay-now .text-content .ads_card p span {
+              color: #FF6600; }
+        body #latest_posts .pay-now .text-content h3 {
+          padding: 10px 0px 15px;
+          font-family: 'Oswald';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 53px;
+          color: #FFFFFF; }
+          body #latest_posts .pay-now .text-content h3 span {
+            color: #FF6600; }
+        body #latest_posts .pay-now .text-content .btn-bg {
+          padding: 8px 60px; }
+    body #latest_posts .blog_ads {
+      height: 500px;
+      background-image: url("../images/ads_banner.png");
+      width: 100%; }
+  body footer {
+    padding: 80px 0; }
+    body footer .footer_company img {
+      padding-bottom: 70px; }
+    body footer .footer_company p {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      padding-bottom: 30px; }
+      body footer .footer_company p span {
+        color: #FF6600; }
+    body footer .footer_company ul {
+      padding-left: 0; }
+      body footer .footer_company ul li {
+        display: inline-block;
+        height: 47px;
+        width: 47px;
+        line-height: 47px;
+        text-align: center;
+        background: #FF6600;
+        color: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 1px solid #FF6600;
+        transition: all linear .3s; }
+        body footer .footer_company ul li:hover {
+          background: transparent;
+          transition: all linear .3s; }
+    body footer .footer_head {
+      color: #FF6600;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 36px; }
+    body footer ul {
+      padding-left: 0; }
+      body footer ul li {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        transition: all linear .3s; }
+        body footer ul li:hover {
+          color: #999;
+          transition: all linear .3s; }
+    body footer .copy_right {
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 400; }
+
+/*======== large device =========*/
+/*======== medium device =========*/
+/*======== small device =========*/
+/*======== Extra small device =========*/
+@media (max-width: 575.98px) {
+  #loginBlock {
+    display: none; }
+
+  .navbar-nav {
+    text-align: center; }
+
+  body #banner h1 {
+    font-size: 46px;
+    margin-top: 65px;
+    text-align: center; }
+
+  body #banner p {
+    padding-right: 0px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: normal; }
+
+  body .btn-bg {
+    font-size: 20px;
+    padding: 10px 29px; } }
+
+/*# sourceMappingURL=main.css.map */

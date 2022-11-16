@@ -1,9 +1,16 @@
 @extends('layouts.dashboardApp')
-@section('dashboardBodyTitle')
-    Dashboard
+@section('dashboard')
+mm-active
 @endsection
-@section('dashboardContent')
-    <div class="row">
-        <div class="col-lg-12"></div>
+@section('dashboard_content')
+<!-- Page-Title -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-title-box">
+            <h4 class="page-title">Welcome {{ Auth::user()->name }}</h4>
+        </div>
+        <!--end page-title-box-->
     </div>
+    <!--end col-->
+</div><!-- end page title end breadcrumb -->
 @endsection

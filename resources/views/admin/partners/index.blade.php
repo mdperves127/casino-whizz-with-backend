@@ -1,5 +1,5 @@
 @extends('layouts.dashboardApp')
-@section('home')
+@section('partners')
 mm-active
 @endsection
 @section('dashboard_content')
